@@ -85,7 +85,7 @@ export function ComprehensiveDashboard() {
       {/* Step 2: KYC Form */}
       <div className="space-y-6">
         <div className="text-center">
-          <Badge variant="outline" className="text-lg px-4 py-2 bg-blue-50 text-blue-700 border-blue-200">
+          <Badge variant="outline" className="text-lg px-4 py-2 bg-purple-50 text-purple-700 border-purple-200">
             Step 2: KYC Form - Business Registration Information
           </Badge>
         </div>
@@ -110,7 +110,7 @@ export function ComprehensiveDashboard() {
                     <Label htmlFor="businessName">Registered Business Name *</Label>
                     <Input
                       id="businessName"
-                      value="Samaya Electronics"
+                      placeholder="Samaya Electronics"
                       className="h-11"
                     />
                   </div>
@@ -119,7 +119,7 @@ export function ComprehensiveDashboard() {
                     <Label htmlFor="businessPhone">Business Phone Number *</Label>
                     <Input
                       id="businessPhone"
-                      value="+977 9841234567"
+                      placeholder="+977 9841234567"
                       className="h-11"
                     />
                   </div>
@@ -129,7 +129,7 @@ export function ComprehensiveDashboard() {
                   <Label htmlFor="registeredAddress">Registered Address *</Label>
                   <Textarea
                     id="registeredAddress"
-                    value="Putalisadak, Kathmandu, Nepal - 44600"
+                    placeholder="Putalisadak, Kathmandu, Nepal - 44600"
                     className="min-h-[80px]"
                   />
                 </div>
@@ -138,7 +138,7 @@ export function ComprehensiveDashboard() {
                   <Label htmlFor="panNumber">PAN Number *</Label>
                   <Input
                     id="panNumber"
-                    value="123456789"
+                    placeholder="123456789"
                     className="h-11"
                   />
                 </div>
@@ -155,7 +155,7 @@ export function ComprehensiveDashboard() {
                     <Label htmlFor="bankName">Bank Name (Business Account) *</Label>
                     <Input
                       id="bankName"
-                      value="Nepal Investment Bank"
+                      placeholder="Nepal Investment Bank"
                       className="h-11"
                     />
                   </div>
@@ -164,7 +164,7 @@ export function ComprehensiveDashboard() {
                     <Label htmlFor="accountNumber">Account Number *</Label>
                     <Input
                       id="accountNumber"
-                      value="01234567890123"
+                      placeholder="01234567890123"
                       className="h-11"
                     />
                   </div>
@@ -173,7 +173,7 @@ export function ComprehensiveDashboard() {
                     <Label htmlFor="accountName">Bank Account Name *</Label>
                     <Input
                       id="accountName"
-                      value="Samaya Electronics Pvt. Ltd."
+                      placeholder="Samaya Electronics Pvt. Ltd."
                       className="h-11"
                     />
                   </div>
@@ -182,7 +182,7 @@ export function ComprehensiveDashboard() {
                     <Label htmlFor="bankBranch">Bank Account Branch *</Label>
                     <Input
                       id="bankBranch"
-                      value="New Road Branch"
+                      placeholder="New Road Branch"
                       className="h-11"
                     />
                   </div>
@@ -281,14 +281,14 @@ export function ComprehensiveDashboard() {
                 <p>📋 KYC Verification can take up to 3–4 business days.</p>
               </div>
 
-              <Card className="bg-gray-50 border-gray-200">
+              <Card className="bg-[#FAF5FF] border-purple-200">
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <CreditCard className="h-5 w-5 text-gray-400" />
+                      <CreditCard className="h-5 w-5 text-purple-400" />
                       <div>
-                        <h4 className="font-medium text-gray-500">QR Payment</h4>
-                        <p className="text-sm text-gray-400">Supports all wallets and mobile banking applications</p>
+                        <h4 className="font-medium text-purple-700">QR Payment</h4>
+                        <p className="text-sm text-purple-600">Supports all wallets and mobile banking applications</p>
                       </div>
                     </div>
                     <Switch checked={false} disabled={true} />
@@ -333,20 +333,21 @@ export function ComprehensiveDashboard() {
                 Apply for Fonepay
               </Button>
 
-              <Card className="bg-gray-50 border-gray-200">
+              <Card className="bg-[#FAF5FF] border-purple-200">
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <CreditCard className="h-5 w-5 text-gray-600" />
+                      <CreditCard className="h-5 w-5 text-purple-600" />
                       <div>
-                        <h4 className="font-medium text-gray-900">QR Payment</h4>
-                        <p className="text-sm text-gray-600">Supports all wallets and mobile banking applications</p>
+                        <h4 className="font-medium text-purple-900">QR Payment</h4>
+                        <p className="text-sm text-purple-700">Supports all wallets and mobile banking applications</p>
                       </div>
                     </div>
                     <Button 
                       variant="outline" 
                       size="sm" 
-                      className="text-purple-600 border-purple-200 hover:bg-purple-50"
+                      disabled
+                      className="opacity-40 cursor-not-allowed text-purple-400 border-purple-200"
                     >
                       Connect
                     </Button>
@@ -476,17 +477,17 @@ export function ComprehensiveDashboard() {
               {/* Document Section */}
               <div className="space-y-6">
                 <h3 className="text-lg font-semibold text-gray-900 border-b border-gray-200 pb-2">
-                  Document
+                  Uploaded Documents
                 </h3>
                 
                 <div className="space-y-4">
                   <div className="space-y-2">
-                    <Label>Uploaded Documents</Label>
-                    <p className="text-sm text-gray-600 mb-2">Registration files documents</p>
-                    <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
-                      <Upload className="h-8 w-8 text-gray-400 mx-auto mb-2" />
-                      <p className="text-sm text-gray-600 mb-2">Click to upload or drag and drop</p>
-                      <p className="text-xs text-gray-500">PNG, JPG, PDF up to 10MB</p>
+                    <Label>Registration Documents</Label>
+                    <p className="text-sm text-gray-600 mb-2">Registration Photo & PAN Photo</p>
+                    <div className="border-2 border-green-300 bg-green-50 rounded-lg p-6 text-center">
+                      <CheckCircle2 className="h-8 w-8 text-green-600 mx-auto mb-2" />
+                      <p className="text-sm text-green-700 mb-2">Documents uploaded successfully</p>
+                      <p className="text-xs text-green-600">registration_documents.pdf (2.4 MB)</p>
                     </div>
                   </div>
 
@@ -502,34 +503,34 @@ export function ComprehensiveDashboard() {
                         Download Agreement
                       </Button>
                     </div>
-                    <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
-                      <Upload className="h-8 w-8 text-gray-400 mx-auto mb-2" />
-                      <p className="text-sm text-gray-600 mb-2">Click to upload signed agreement</p>
-                      <p className="text-xs text-gray-500">PDF up to 10MB</p>
+                    <div className="border-2 border-green-300 bg-green-50 rounded-lg p-6 text-center">
+                      <CheckCircle2 className="h-8 w-8 text-green-600 mx-auto mb-2" />
+                      <p className="text-sm text-green-700 mb-2">Signed agreement uploaded successfully</p>
+                      <p className="text-xs text-green-600">signed_agreement.pdf (1.8 MB)</p>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Terms and Conditions */}
-              <div className="bg-blue-50 border border-blue-200 p-6 rounded-lg text-sm text-gray-700">
+              <div className="bg-[#FEFCE8] border border-yellow-200 p-6 rounded-lg text-sm text-gray-700">
                 <div className="flex items-start gap-3 mb-4">
-                  <Info className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <Info className="h-5 w-5 text-yellow-600 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-blue-900 mb-2">Important Information</h4>
+                    <h4 className="font-semibold text-yellow-900 mb-2">Important Information</h4>
                   </div>
                 </div>
-                <p className="mb-2">
-                  <strong>Note:</strong> The Fonepay Terminal is exclusively available to Blanxer clients and is fully integrated to 
-                  work seamlessly within the Blanxer platform. A transaction fee applies to each payment processed 
-                  through the Fonepay Terminal.
-                </p>
-                <p className="mb-2">
-                  For detailed information about fees, terms, and service instructions,
-                </p>
-                <p>
-                  <strong>Please refer to your email for specific service charges.</strong>
-                </p>
+                <div className="space-y-2">
+                  <p className="mb-2">
+                    <strong>Note:</strong> The Fonepay Terminal is exclusively available to Blanxer clients and is fully integrated to 
+                    work seamlessly within the Blanxer platform.
+                  </p>
+                  <ul className="list-disc list-inside space-y-1 text-sm">
+                    <li>A transaction fee applies to each payment processed through the Fonepay Terminal</li>
+                    <li>For detailed information about fees, terms, and service instructions</li>
+                    <li><strong>Please refer to your email for specific service charges</strong></li>
+                  </ul>
+                </div>
               </div>
 
               <div className="flex items-center space-x-2">
@@ -587,44 +588,39 @@ export function ComprehensiveDashboard() {
 
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
-                  <Badge variant="secondary" className="bg-yellow-100 text-yellow-700 border-yellow-200">
-                    Fonepay Application
-                  </Badge>
                   <Badge variant="secondary" className="bg-gray-100 text-gray-600">
-                  Pending
+                    Pending
                   </Badge>
                 </div>
                 
-                <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 p-4 rounded-lg">
+                <div className="bg-[#FEFCE8] border border-yellow-200 p-4 rounded-lg">
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <span className="text-blue-600 text-sm font-semibold">⏳</span>
+                    <div className="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <AlertCircle className="h-4 w-4 text-yellow-600" />
                     </div>
                     <div className="space-y-2">
-                      <h4 className="font-medium text-blue-900">Processing Your Application</h4>
-                      <p className="text-sm text-blue-700">
-                        Your Fonepay application is being processed. This can take up to 24-48 hours.
-                      </p>
-                      <p className="text-sm text-blue-700">
-                        Once approved, you'll receive an SMS with your Fonepay Terminal ID. Download the Fonepay App, 
-                        login with your credentials, and click the Connect button below.
-                      </p>
+                      <h4 className="font-medium text-yellow-900">Processing Your Application</h4>
+                      <ul className="list-disc list-inside space-y-1 text-sm text-yellow-700">
+                        <li>Your Fonepay application is being processed (24-48 hours)</li>
+                        <li>You'll receive an SMS with your Fonepay Terminal ID once approved</li>
+                        <li>Download the Fonepay App, login with your credentials, and click Connect</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <Card className="bg-gray-50 border-gray-200">
+              <Card className="bg-[#FAF5FF] border-purple-200">
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <CreditCard className="h-5 w-5 text-gray-600" />
+                      <CreditCard className="h-5 w-5 text-purple-600" />
                       <div>
-                        <h4 className="font-medium text-gray-900">QR Payment</h4>
-                        <p className="text-sm text-gray-600">Supports all wallets and mobile banking applications</p>
+                        <h4 className="font-medium text-purple-900">QR Payment</h4>
+                        <p className="text-sm text-purple-700">Supports all wallets and mobile banking applications</p>
                       </div>
                     </div>
-                    <Button variant="outline" size="sm" className="text-purple-600 border-purple-200">
+                    <Button variant="outline" size="sm" className="text-purple-600 border-purple-300">
                       Connect
                     </Button>
                   </div>
@@ -780,17 +776,17 @@ export function ComprehensiveDashboard() {
                 </Badge>
               </div>
 
-              <Card className="bg-gray-50 border-gray-200">
+              <Card className="bg-[#FAF5FF] border-purple-200">
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <CreditCard className="h-5 w-5 text-gray-600" />
+                      <CreditCard className="h-5 w-5 text-purple-600" />
                       <div>
-                        <h4 className="font-medium text-gray-900">QR Payment</h4>
-                        <p className="text-sm text-gray-600">Supports all wallets and mobile banking applications</p>
+                        <h4 className="font-medium text-purple-900">QR Payment</h4>
+                        <p className="text-sm text-purple-700">Supports all wallets and mobile banking applications</p>
                       </div>
                     </div>
-                    <Button variant="outline" size="sm" className="text-purple-600 border-purple-200">
+                    <Button variant="outline" size="sm" className="text-purple-600 border-purple-300">
                       Connect
                     </Button>
                   </div>
